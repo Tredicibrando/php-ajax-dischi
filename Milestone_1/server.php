@@ -73,69 +73,7 @@ $discs = [
     ]
   ];
 
-?>
+  header('Content-Type: application/Json');
 
+  echo json_encode($discs);
 
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="app.css">
-    
-</head>
-<body>
-
-    <div id="app">
-
-        <header>
-            <figure class="logo_wrapper">
-                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Spotify.png" alt="">
-            </figure>
-        </header>
-
-        <main>
-
-            <div class="card_wrapper">
-            
-
-                <?php
-                    foreach ( $discs as $disc ){
-                ?>
-                <div class="card">
-                    <figure class="disc_wrapper">
-                        <img class="disc" src=" <?php echo $disc["poster"] ?>   " alt="">
-                    </figure>
-
-                    <div class="card_text_wrapper">
-                        <h4 class="title"><?php echo $disc["title"] ?></h4>
-                        <p class="author"><?php echo $disc["author"] ?></p>
-                        <p class="year"><?php echo $disc["year"] ?></p>
-                    </div>
-                </div>
-                
-                <?php
-                }
-                ?>
-
-            </div>
-
-
-        </main>
-
-
-
-    </div>
-  
-
-    <script src="app.js"></script>
-</body>
-</html>

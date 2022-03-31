@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
 ul,ol{
     list-style: none;
 }
@@ -38,11 +42,11 @@ main{
     width: 70%;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top:  25px;
+    padding-top: 50px;
 }
 
 .card {
