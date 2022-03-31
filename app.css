@@ -33,3 +33,61 @@ main{
     height: calc( 100vh - 70px );
     background-color: #1E2D3B;
 }
+
+.card_wrapper{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top:  25px;
+}
+
+.card {
+    width: calc((100% - 50px) / 5);
+    padding: 10px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2E3A46; 
+}
+
+.disc_wrapper{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-position: center;
+    object-fit: cover;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.card_text_wrapper{
+    text-align: center;
+    width: 70%;
+}
+
+.author {
+    font-size: 16px;
+    color: rgba(#ddd,0.7);
+    margin-bottom: 5px;
+}
+
+.year{
+    font-size: 14px;
+    color: #ddd;
+}
