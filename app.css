@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    background-color: #2E3A46;
+    align-items: center;
+}
+
+.logo_wrapper{
+    width: max-content;
+    padding: 5px;
+}
+
+.logo{
+    width: 45px;
+    display: block;
+}
+
+main{
+    height: calc( 100vh - 70px );
+    background-color: #1E2D3B;
+}
