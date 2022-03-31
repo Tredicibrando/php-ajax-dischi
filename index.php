@@ -1,6 +1,6 @@
 <?php
 
-$disc = [
+$discs = [
     [
       'poster' => 'https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg',
       'title' => 'New Jersey',
@@ -90,31 +90,46 @@ $disc = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="app.css">
+    
 </head>
 <body>
 
     <div id="app">
 
-    <header>
-        <figure class="logo_wrapper">
-            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Spotify.png" alt="">
-        </figure>
-    </header>
+        <header>
+            <figure class="logo_wrapper">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Spotify.png" alt="">
+            </figure>
+        </header>
 
-    <main>
+        <main>
 
-        <div class="card_wrapper">
-        
-
-            <?php
+            <div class="card_wrapper">
             
-                foreach ( $disc as $discs )
-            ?>
-        
-        </div>
+
+                <?php
+                    foreach ( $discs as $disc ){
+                ?>
+                <div class="card">
+                    <figure class="disc_wrapper">
+                        <img class="disc" src=" <?php echo $disc["poster"] ?>   " alt="">
+                    </figure>
+
+                    <div class="card_text_wrapper">
+                        <h4 class="title"><?php echo $disc["title"] ?></h4>
+                        <p class="author"><?php echo $disc["author"] ?></p>
+                        <p class="year"><?php echo $disc["year"] ?></p>
+                    </div>
+                </div>
+                
+                <?php
+                }
+                ?>
+
+            </div>
 
 
-    </main>
+        </main>
 
 
 
