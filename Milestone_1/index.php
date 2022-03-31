@@ -115,13 +115,13 @@ $discs = [
                 ?>
                 <div class="card">
                     <figure class="disc_wrapper">
-                        <img class="disc" src=" <?php echo $disc["poster"] ?>   " alt="">
+                        <img class="disc" src=" <?php echo $disc["poster"]; ?>   " alt="">
                     </figure>
 
                     <div class="card_text_wrapper">
-                        <h4 class="title"><?php echo $disc["title"] ?></h4>
-                        <p class="author"><?php echo $disc["author"] ?></p>
-                        <p class="year"><?php echo $disc["year"] ?></p>
+                        <h4 class="title"><?php echo $disc["title"]; ?></h4>
+                        <p class="author"><?php echo $disc["author"]; ?></p>
+                        <p class="year"><?php echo $disc["year"]; ?></p>
                     </div>
                 </div>
                 
